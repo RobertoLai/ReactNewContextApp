@@ -4,13 +4,13 @@ import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 
-import { MyProvider } from "./context";
+import { Provider } from "./context";
 
 
 ReactDOM.render(
-  <MyProvider>
+  <Provider>
     <App />
-  </MyProvider>,
+</Provider>,
   document.getElementById("root")
 );
 registerServiceWorker();

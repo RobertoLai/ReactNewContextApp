@@ -1,14 +1,14 @@
 import React from "react";
-import { MyContext } from "../context";
+import { Context } from "../context";
 
-export class MyProvider extends React.Component {
+export class Provider extends React.Component {
   state = {
     name: "Roberto",
     age: 80
   };
   render() {
     return (
-      <MyContext.Provider
+      <Context.Provider
         value={{
           state: this.state,
           makeMeYounger: () =>
@@ -18,7 +18,7 @@ export class MyProvider extends React.Component {
         }}
       >
         {this.props.children}
-      </MyContext.Provider>
+      </Context.Provider>
     );
   }
 }

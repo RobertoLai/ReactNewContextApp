@@ -1,11 +1,11 @@
 import React from "react";
-import { MyContext } from "../context";
+import { Context } from "../context";
 
 export class Person extends React.Component {
   render() {
     return (
       <div className="person">
-        <MyContext.Consumer>
+        <Context.Consumer>
           {context => (
             <React.Fragment>
               <p>
@@ -15,7 +15,7 @@ export class Person extends React.Component {
 
             </React.Fragment>
           )}
-        </MyContext.Consumer>
+        </Context.Consumer>
       </div>
     );
   }

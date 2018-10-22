@@ -1,2 +1,2 @@
-export { MyContext } from "./MyContext";
-export { MyProvider } from "./MyProvider";
+export { Context } from "./Context";
+export { Provider } from "./Provider";
